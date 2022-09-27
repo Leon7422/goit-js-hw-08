@@ -41,7 +41,7 @@ function autoWriteUserData() {
   if (localStorage.getItem('feedback-form-state') === null) {
     return;
   }
-  userData = JSON.parse(localStorage.getItem('feedback-form-state'));
+  const userData = JSON.parse(localStorage.getItem('feedback-form-state'));
   document.querySelector('[name="email"]').value = userData.email;
   document.querySelector('[name="message"]').value = userData.message;
 }
